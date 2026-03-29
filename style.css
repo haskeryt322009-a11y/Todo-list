@@ -14,7 +14,7 @@ body {
 
 
 #main-box {
-    background-color: rgb(170, 170, 170);
+    background-color: rgba(170, 170, 170, 0);
     width: 400px;
     height: 400px;
     display: flex;
@@ -28,11 +28,13 @@ body {
     justify-content: center;
     background-color: rgb(255, 255, 255);
     height: 100px;
+    font-size: larger;
 }
 
 #box2 {
     background-color: rgb(238, 238, 238);
-    height: 200px;
+    height: auto;
+    min-height: 100px;
 }
 
 #box3 {
