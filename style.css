@@ -29,12 +29,14 @@ body {
     background-color: rgb(255, 255, 255);
     height: 100px;
     font-size: larger;
+    overflow: auto;
 }
 
 #box2 {
     background-color: rgb(238, 238, 238);
-    height: auto;
     min-height: 100px;
+    max-height: 400px;
+    overflow: auto;
 }
 
 #box3 {
