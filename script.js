@@ -31,7 +31,8 @@ function addTaskToDOM(taskText) {
 
     deleteBtn.addEventListener("click", () => {
         li.remove();
-        tasks = tasks.filter(t => t !== taskText); // удаляем задачу из массива
+        const liIndex = Array.from(list.children).indexOf(li);
+        tasks.splice(liIndex, 1); // удаляем именно эту задачу по позиции
         localStorage.setItem("tasks", JSON.stringify(tasks)); // обновляем localStorage
         updateNoTaskMessage();
     });
